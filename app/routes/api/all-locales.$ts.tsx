@@ -97,7 +97,7 @@ import {
 } from "date-fns/locale";
 
 export const loader: LoaderFunction = async ({ params }) => {
-  const { q } = params;
+  const { ts } = params;
 
   const allLocales = [
     af,
@@ -198,7 +198,7 @@ export const loader: LoaderFunction = async ({ params }) => {
   return Object.fromEntries(
     allLocales.map((locale) => [
       locale.code,
-      format(Number(q), "dd MMMM yyyy", { locale }),
+      format(Number(ts), "dd MMMM yyyy", { locale }),
     ])
   );
 };
