@@ -18,7 +18,7 @@ export default function Index() {
   const [localizedDates, setLocalizedDates] = useState({});
   const fetchLocales = useCallback(
     (locale: "de" | "all-locales") => {
-      fetch(`http://localhost:3000/api/${locale}/${query}`)
+      fetch(`/api/${locale}/${query}`)
         .then((res) => res.json())
         .then((res) => {
           setLocalizedDates(res);
