@@ -2,14 +2,14 @@
 
 This project has 1 page and 3 routes (2 API endpoints with a loader function, 1 frontend layout route) :
 
-1. [`app/routes/$ts.tsx`](./app/routes/%24q.tsx) that serves [`/$ts`](http://localhost:3000/1700000000000), with `$ts` being a timestamp, shows a page with a French and a German localised formatted version of the provided timestamp `$ts`.
+1. [`app/routes/$ts.tsx`](./app/routes/%24q.tsx) that serves [`/$ts`](https://weird-remix-bundles-production.up.railway.app/1700000000000), with `$ts` being a timestamp, shows a page with a French and a German localised formatted version of the provided timestamp `$ts`.
 
 - French version is provided by the frontend import `import { fr } from "date-fns/locale";` directly.
 - German version is fetched with an API call to `/api/de/$ts`
 
-2. [`app/routes/api/de.$ts.tsx`](./app/routes/api/de.%24ts.tsx) that serves [`/api/de/$ts`](http://localhost:3000/api/de/1700000000000)
+2. [`app/routes/api/de.$ts.tsx`](./app/routes/api/de.%24ts.tsx) that serves [`/api/de/$ts`](https://weird-remix-bundles-production.up.railway.app/api/de/1700000000000)
 
-3. [`app/routes/api/all-locales.$ts.tsx`](./app/routes/api/all-locales.%24ts.tsx) that serves [`/api/all-locales/$ts`](http://localhost:3000/api/all-locales/1700000000000)
+3. [`app/routes/api/all-locales.$ts.tsx`](./app/routes/api/all-locales.%24ts.tsx) that serves [`/api/all-locales/$ts`](https://weird-remix-bundles-production.up.railway.app/api/all-locales/1700000000000)
 
 4. There is another API endpoint that returns all suported `date-fns` localized versions: `/api/de/$ts`
 
