@@ -11,8 +11,6 @@ This project has 1 page and 3 routes (2 API endpoints with a loader function, 1 
 
 3. [`app/routes/api/all-locales.$ts.tsx`](./app/routes/api/all-locales.%24ts.tsx) that serves [`/api/all-locales/$ts`](https://weird-remix-bundles-production.up.railway.app/api/all-locales/1700000000000)
 
-4. There is another API endpoint that returns all suported `date-fns` localized versions: `/api/de/$ts`
-
 ## Expected behaviour
 
 > ✅ The frontend bundle(s) for route [`app/routes/$ts.tsx`](./app/routes/%24ts.tsx) to only contain `fr` `date-fns` locale, the one that is used in the Frontend.
